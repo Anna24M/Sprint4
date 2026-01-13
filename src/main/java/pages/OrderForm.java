@@ -11,20 +11,20 @@ import java.time.Duration;
 public class OrderForm {
     private final WebDriver webDriver;
     private final WebDriverWait wait;
-    private final By firstNameLocator = By.xpath("//input[@placeholder='* Имя']");
-    private final By lastNameLocator = By.xpath("//input[@placeholder='* Фамилия']");
-    private final By addressLocator = By.xpath("//input[@placeholder='* Адрес: куда привезти заказ']");
-    private final By stationMetroLocator = By.xpath("//input[@placeholder='* Станция метро']");
-    private final By numberTelephoneLocator = By.xpath("//input[@placeholder='* Телефон: на него позвонит курьер']");
-    private final By nextOrderButtonLocator = By.cssSelector("button.Button_Button__ra12g.Button_Middle__1CSJM");
-    private final By dateLocator = By.xpath("//input[@placeholder='* Когда привезти самокат']");
-    private final By timeRentLocator = By.className("Dropdown-control");
-    private final By dropDownMenuLocator = By.className("Dropdown-menu");
-    private final By commentLocator = By.xpath("//input[@placeholder='Комментарий для курьера']");
-    private final By completeNextOrderButtonLocator = By.xpath("//div[contains(@class,'Order_Buttons')]//button[text()='Заказать']");
-    private final By textLocator = By.className("Order_Header__BZXOb");
-    private final By conformOrderButtonLocator =  By.xpath("//div[contains(@class,'Order_Buttons')]//button[text()='Да']");
-    private final By popUpLocator = By.xpath("//div[contains(@class, 'Order_Modal__YZ-d3')]//div[contains(text(), 'Заказ оформлен')]");
+    private final By firstNameLocator = By.xpath("//input[@placeholder='* Имя']"); //Поле "Имя"
+    private final By lastNameLocator = By.xpath("//input[@placeholder='* Фамилия']"); //Поле "Фамилия"
+    private final By addressLocator = By.xpath("//input[@placeholder='* Адрес: куда привезти заказ']"); //Поле "Адрес"
+    private final By stationMetroLocator = By.xpath("//input[@placeholder='* Станция метро']"); //Поле "Станция метро"
+    private final By numberTelephoneLocator = By.xpath("//input[@placeholder='* Телефон: на него позвонит курьер']"); //Поле "Телефон"
+    private final By nextOrderButtonLocator = By.cssSelector("button.Button_Button__ra12g.Button_Middle__1CSJM"); //Кнопка "Далее"
+    private final By dateLocator = By.xpath("//input[@placeholder='* Когда привезти самокат']"); //Поле "Дата"
+    private final By timeRentLocator = By.className("Dropdown-control"); //Поле "Срок аренды"
+    private final By dropDownMenuLocator = By.className("Dropdown-menu"); //Поле "Цвета самоката"
+    private final By commentLocator = By.xpath("//input[@placeholder='Комментарий для курьера']"); //Поле "Комментарий"
+    private final By completeNextOrderButtonLocator = By.xpath("//div[contains(@class,'Order_Buttons')]//button[text()='Заказать']"); // Кнопка "Заказать"
+    private final By textLocator = By.className("Order_Header__BZXOb"); // Всплывающее окно "Хотите оформить заказ?"
+    private final By conformOrderButtonLocator =  By.xpath("//div[contains(@class,'Order_Buttons')]//button[text()='Да']"); // Кнопка "Да"
+    private final By popUpLocator = By.xpath("//div[contains(@class, 'Order_Modal__YZ-d3')]//div[contains(text(), 'Заказ оформлен')]"); // Всплывающее окно "Заказ оформлен"
 
     public OrderForm(WebDriver webDriver) {
         this.webDriver = webDriver;
